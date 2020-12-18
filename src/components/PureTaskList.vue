@@ -1,4 +1,4 @@
-<!-- src/components/TaskList.vue -->
+<!-- src/components/PureTaskList.vue -->
 
 <template>
   <div class="list-items">
@@ -24,7 +24,7 @@
 <script>
   import Task from './Task';
   export default {
-    name: 'TaskList',
+    name: 'PureTaskList',
     components: { Task },
     props: {
       tasks: { type: Array, required: true, default: () => [] },
@@ -37,6 +37,7 @@
           ...this.tasks.filter(t => t.state !== 'TASK_PINNED'),
         ];
       },
+
       isEmpty() {
         return this.tasks.length === 0;
       },
