@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import PureTaskList from '@/components/PureTaskList';
+  import PureTaskList from '../components/PureTaskList';
   import { mapState, mapActions } from 'vuex';
 
   export default {
