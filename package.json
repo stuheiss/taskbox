@@ -8,9 +8,12 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages -- --source-branch=main",
+    "upgrade-storybook": "npx sb@next upgrade"
   },
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.7",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vuex": "^3.6.0"
