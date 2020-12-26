@@ -22,12 +22,12 @@
 </template>
 
 <script>
-  import TaskList from '../containers/TaskList.vue';
-  export default {
-    name: 'PureInboxScreen',
-    components: { TaskList },
-    props: {
-      error: { type: Boolean, default: false },
-    },
-  };
+import TaskList from "../containers/TaskList.vue";
+export default {
+  name: "PureInboxScreen",
+  components: { TaskList },
+  props: {
+    error: { type: Boolean, default: false }
+  }
+};
 </script>

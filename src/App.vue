@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import store from './store.js';
-import InboxScreen from './containers/InboxScreen.vue';
+import store from "./store.js";
+import InboxScreen from "./containers/InboxScreen.vue";
 
 export default {
   name: "app",
@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style>
-  @import './index.css';
+@import "./index.css";
 </style>

@@ -7,7 +7,12 @@
       <span class="checkbox-custom" @click="$emit('archive-task', task.id)" />
     </label>
     <div class="title">
-      <input type="text" :value="task.title" readonly placeholder="Input title" />
+      <input
+        type="text"
+        :value="task.title"
+        readonly
+        placeholder="Input title"
+      />
     </div>
 
     <div class="actions">
@@ -19,20 +24,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'Task',
-    props: {
-      task: {
-        type: Object,
-        required: true,
-        default: () => ({ id: '', state: '', title: '' }),
-        validator: task => ['id', 'state', 'title'].every(key => key in task),
-      },
-    },
-    computed: {
-      isChecked() {
-        return this.task.state === 'TASK_ARCHIVED';
-      },
-    },
-  };
+export default {
+  name: "Task",
+  props: {
+    task: {
+      type: Object,
+      required: true,
+      default: () => ({ id: "", state: "", title: "" }),
+      validator: task => ["id", "state", "title"].every(key => key in task)
+    }
+  },
+  computed: {
+    isChecked() {
+      return this.task.state === "TASK_ARCHIVED";
+    }
+  }
+};
 </script>
