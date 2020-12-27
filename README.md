@@ -41,7 +41,15 @@ yarn storybook
 yarn build-storybook
 ```
 
-### Deploy Storybook
+### Deploy Storybook to GitHub Pages
+
+Requires vue.config.js with content
+```
+module.exports = {
+  publicPath: '/taskbox/'
+}
+```
+
 ```
 yarn deploy-storybook
 ```
